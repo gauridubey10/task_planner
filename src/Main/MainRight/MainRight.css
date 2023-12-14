@@ -1,0 +1,36 @@
+.MainRight{
+    display: flex;
+    flex:0 0 300px;
+    background-color: #7778BB;
+    padding: 20px 0 20px 25px;
+    border: 1px solid rgb(95, 95, 99);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+textarea{
+    width: 285px;
+    height: 450px;
+    border-radius: 10px;
+    background-color:  #BEBDEB;
+    outline: none;
+    padding: 20px;
+}
+
+.SaveButton{
+   display: flex;
+   padding:15px;
+   border-radius: 10px;
+   width: fit-content;
+   align-items: center;
+   justify-content: center;
+   background-color: #BEBDEB;
+}
+
+.editContainer{
+    width: 100%;
+    padding-right: 15px;
+}
+

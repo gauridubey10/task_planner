@@ -1,0 +1,25 @@
+.Header {
+  display: flex;
+  background-color: #6451C3;
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.Title{
+    display: flex;  
+    height: 30px;
+    margin: 10px 0  10px 24px;
+}
+
+.img{
+  
+}
+
+.User-logo{
+    display: flex;
+    margin: 10px 24px  10px 0;
+}

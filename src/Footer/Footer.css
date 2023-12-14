@@ -1,0 +1,87 @@
+.Footer{
+    padding: 15px;
+    position: sticky;
+    bottom: 0px;
+    border-top: 2px solid rgb(95, 95, 99);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #8E8FFA;
+}
+
+button{
+
+        display: flex;
+        flex: 1;
+        border: 1px solid transparent;
+        background-color: #BEBDEB;
+        height: 30px;
+        margin-left: 20px;
+        border-radius: 10px;
+        justify-content: center;
+        margin-right: 20px;
+        align-items: center;
+        font-size: medium;
+        font-weight: 500;
+        cursor: pointer;
+}
+
+
+.InputBar{
+    display: flex;
+    align-items: center;
+    flex:12;
+   
+}
+
+.PriorityModal{
+    display: flex;
+    margin-left: -8%;
+    font-size: medium;
+    font-weight: 500;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+}
+
+.PriorityType{
+    background-color: #5C55C8;
+    margin-top: -126px;
+}
+
+.PriorityType button{
+    width: 100px;
+    border-radius: inherit;
+    margin: 3px;
+    justify-content: end;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 10px;
+  }
+
+.circle.color-1 { background-color: red; }
+.circle.color-2 { background-color: blue; }
+.circle.color-3 { background-color: green; }
+
+.Priority{
+    margin-bottom: -24px;
+}
+
+input[type=text]{
+   height: 50px;
+   width: 100%;
+   background-color: #BEBDEB;
+   border-radius: 15px;
+   border-color:transparent;
+   margin-left: 10px;
+   padding: 15px;
+   box-sizing: border-box;
+   font-size: medium;
+   outline:none
+}
+

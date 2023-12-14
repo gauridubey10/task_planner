@@ -1,0 +1,16 @@
+.MainRight{
+    display: flex;
+    flex:0 0 300px;
+    background-color: #7778BB;
+    padding: 20px;
+    border: 1px solid rgb(95, 95, 99);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SaveButton{
+   display: flex;
+   background-color: #BEBDEB;
+
+}
+
