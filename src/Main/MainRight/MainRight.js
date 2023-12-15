@@ -1,15 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./MainRight.css";
 
 const MainRight = (props) => {
-  const {selectedItem} = props;
-  const [textValue , settextValue] = useState(selectedItem);
+  const {selectedItem , handleSaveItem} = props;
+  const [textValue , settextValue] = useState(selectedItem.Text);
+
+  useEffect(()=>{
+    settextValue(selectedItem.Text)
+  },[selectedItem]);
 
   const handleInput= (event)=>{
     console.log(event.target.value);
     settextValue(event.target.value);
   }
-  console.log("inputvalue",textValue,selectedItem)
 
     return <div className="MainRight">
       <div className="editContainer">
@@ -25,7 +28,9 @@ const MainRight = (props) => {
         
       </div>
 
-      <div className="SaveButton">Save Changes</div>
+      <div className="SaveButton" onClick={()=>{
+        handleSaveItem(selectedItem.id ,textValue )
+      }}>Save Changes</div>
       </div>
   };
   
