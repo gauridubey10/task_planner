@@ -47,8 +47,10 @@ function App() {
       id: Items_size + 1,
       Text: input
     }
-    const newItem = [newTask ,...Items ];
-    setItem(newItem);
+
+   // Items.push(newTask);
+    const newItem =   Items.concat(newTask)
+     setItem(newItem);
 
   }
   

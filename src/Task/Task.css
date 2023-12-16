@@ -12,8 +12,9 @@
     width: 100%;
 }
 
-.task .selected{
-  background-color: #8a1717;
+.task.selected{
+  background-color: #a4a7b3;
+  border: 1px solid beige;
 }
 
 .taskElement{

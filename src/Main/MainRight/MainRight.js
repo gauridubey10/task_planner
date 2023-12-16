@@ -14,6 +14,10 @@ const MainRight = (props) => {
     settextValue(event.target.value);
   }
 
+  const handleSaveButton = ()=>{
+    handleSaveItem(selectedItem.id ,textValue )
+  }
+
     return <div className="MainRight">
       <div className="editContainer">
        <div
@@ -28,9 +32,7 @@ const MainRight = (props) => {
         
       </div>
 
-      <div className="SaveButton" onClick={()=>{
-        handleSaveItem(selectedItem.id ,textValue )
-      }}>Save Changes</div>
+      <div className="SaveButton" onClick={handleSaveButton}>Save Changes</div>
       </div>
   };
   

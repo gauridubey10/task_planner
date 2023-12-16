@@ -15,7 +15,7 @@ const Main = (props) => {
 
 
     return <div className="Main">
-         <MainLeft items={items} onClickItem={onClickItem}/>
+         <MainLeft items={items} onClickItem={onClickItem} selectedItem={selectedItem}/>
          <MainRight selectedItem={selectedItem} handleSaveItem={handleSaveItem}/>
         </div>;
   };
