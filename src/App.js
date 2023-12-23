@@ -7,26 +7,33 @@ import { useState } from 'react';
 const defaultTask = [
   {
     id: '1',
-    Text: "Made roadmap for expert frontent developer"
+    Text: "Made roadmap for expert frontent developer",
+    priority: 'high'
   },
   {
     id: '2',
-    Text: "Connecting with billu"
+    Text: "Connecting with billu",
+    priority: 'high'
   }, {
     id: '3',
-    Text: "making timeline for task"
+    Text: "making timeline for task",
+    priority: 'high'
   }, {
     id: '4',
-    Text: "Exerciese"
+    Text: "Exerciese",
+    priority: 'medium'
   }, {
     id: '5',
-    Text: "Cleaming"
+    Text: "Cleaming",
+    priority: 'low'
   }, {
     id: '6',
-    Text: "loggging off the office laptop"
+    Text: "loggging off the office laptop",
+    priority: 'medium'
   }, {
     id: '7',
-    Text: "go to take grocery"
+    Text: "go to take grocery",
+    priority: 'low'
   },
 ]
 
@@ -41,11 +48,12 @@ function App() {
     setinput(inputValue);
   }
 
-  const handleAdd = ()=>{
+  const handleAdd = (Item)=>{
     const Items_size = Items.length;
     const newTask = {
       id: Items_size + 1,
-      Text: input
+      Text: Item.Text,
+      priority: Item.priority
     }
 
    // Items.push(newTask);

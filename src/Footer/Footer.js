@@ -4,35 +4,45 @@ import React from "react";
 
 const Footer = (props) => {
   const { onInput , OnAdd} = props;
+ 
  const priorityType = ["high","Medium","Low"]
-
   const [inputValue, setInputValue] = useState('');
   const [priority , setpriority] = useState(priorityType[0]);
   const [openModal, setopenModal] = useState(false);
 
+  const newItem = {
+    Text: '',
+    priority: priorityType[0]
+  }
+
   const handleBtnClick =(event)=>{
-    OnAdd();
+    newItem.Text = inputValue;
+    newItem.priority = priority;
+    OnAdd(newItem);
     setInputValue('');
+    setpriority(priorityType[0])
   }
 
   const handleInput = (event)=>{
     setInputValue(event.target.value);
-    onInput(event.target.value);
-   
   }
 
   const PriorityModal = ()=>{
- // if(!openModal) return null;
   const modalStyle = {
     visibility: openModal ? 'visible' : 'hidden',
   };
+
+  const handlePrioritySelection = (index)=>{
+    setpriority(priorityType[index]);
+    setopenModal(!openModal);
+  }
 
    return(
     <div className="PriorityType" style={modalStyle}>
     {priorityType.map((options,index)=>{
      return ( 
-      <div> 
-        <span className={`circle color-${index + 1}`}></span>
+      <div  onClick={()=>handlePrioritySelection(index)}> 
+        <span className={`circle color-${index + 1}`} ></span>
         <button key={index}>{options}</button> 
         </div>
      )

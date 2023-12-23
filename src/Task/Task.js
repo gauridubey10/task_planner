@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Task.css";
+import { colors } from "@mui/material";
 
 const Task = (props) => {
     const {items, onClickItem , selectedItem} = props;
@@ -10,13 +11,15 @@ const Task = (props) => {
 
 const taskElement = items.map((item, i)=>(
             <div              
-            className={`task ${item.id == selectedItem.id ? 'selected' : ''}`}
+            className={`task ${item.id == selectedItem.id ? 'selected' : ''} ${item.priority}`}
             onClick={()=>OnclickTask(item)}>
              <label class="container">
                <input type="checkbox"/>
                <span class="checkmark"></span>
              </label>
+             <span style={{color: "red" , fontSize: "xx-large"}}>!</span>
              <div className="item"> {item.Text}</div>
+             
              </div>
           ))
  

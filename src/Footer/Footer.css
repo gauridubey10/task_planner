@@ -10,7 +10,6 @@
 }
 
 button{
-
         display: flex;
         flex: 1;
         border: 1px solid transparent;
@@ -24,6 +23,11 @@ button{
         font-size: medium;
         font-weight: 500;
         cursor: pointer;
+}
+
+.PriorityType button:hover{
+    background-color: #7d7c87;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -67,6 +71,8 @@ button{
 .circle.color-1 { background-color: red; }
 .circle.color-2 { background-color: blue; }
 .circle.color-3 { background-color: green; }
+
+
 
 .Priority{
     margin-bottom: -24px;
