@@ -8,32 +8,32 @@ const defaultTask = [
   {
     id: '1',
     Text: "Made roadmap for expert frontent developer",
-    priority: 'high'
+    priority: 'High'
   },
   {
     id: '2',
     Text: "Connecting with billu",
-    priority: 'high'
+    priority: 'High'
   }, {
     id: '3',
     Text: "making timeline for task",
-    priority: 'high'
+    priority: 'High'
   }, {
     id: '4',
     Text: "Exerciese",
-    priority: 'medium'
+    priority: 'Medium'
   }, {
     id: '5',
     Text: "Cleaming",
-    priority: 'low'
+    priority: 'Low'
   }, {
     id: '6',
     Text: "loggging off the office laptop",
-    priority: 'medium'
+    priority: 'Medium'
   }, {
     id: '7',
     Text: "go to take grocery",
-    priority: 'low'
+    priority: 'Low'
   },
 ]
 

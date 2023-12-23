@@ -5,7 +5,7 @@ import React from "react";
 const Footer = (props) => {
   const { onInput , OnAdd} = props;
  
- const priorityType = ["high","Medium","Low"]
+ const priorityType = ["High","Medium","Low"]
   const [inputValue, setInputValue] = useState('');
   const [priority , setpriority] = useState(priorityType[0]);
   const [openModal, setopenModal] = useState(false);

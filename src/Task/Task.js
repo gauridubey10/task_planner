@@ -9,7 +9,7 @@ const Task = (props) => {
       onClickItem(item);
     }
 
-const taskElement = items.map((item, i)=>(
+    const taskElement = items.map((item, i)=>(
             <div              
             className={`task ${item.id == selectedItem.id ? 'selected' : ''} ${item.priority}`}
             onClick={()=>OnclickTask(item)}>
@@ -17,7 +17,7 @@ const taskElement = items.map((item, i)=>(
                <input type="checkbox"/>
                <span class="checkmark"></span>
              </label>
-             <span style={{color: "red" , fontSize: "xx-large"}}>!</span>
+             <span className={`priority ${item.priority}`}>!</span>
              <div className="item"> {item.Text}</div>
              
              </div>

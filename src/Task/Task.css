@@ -18,6 +18,10 @@
   border: 1px solid beige;
 }
 
+.priority.High{color: red; font-size: xx-large;}
+.priority.Medium{color: blue; font-size: xx-large;}
+.priority.Low{color: green; font-size: xx-large;}
+
 .taskElement{
     width: 95%;
 }
